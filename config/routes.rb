@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
   
   get 'admin/index'
-  get "/pages/:page" => "pages#show"
+  get '/pages/:page' => 'pages#show'
   
   get 'sessions/create'
   get 'sessions/destroy'
   resources :users
-  
   
   get 'admin' => 'admin#index'
   get 'search' => 'search#index'
