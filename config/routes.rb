@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   get 'admin/index'
   get '/pages/:page' => 'pages#show'
-  
+  get '/users' => redirect('/login')
   get 'sessions/create'
   get 'sessions/destroy'
   resources :users
