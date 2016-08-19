@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   
   get 'sessions/create'
   get 'sessions/destroy'
-  get '/users' => redirect('/login')
   resources :users
   
   
